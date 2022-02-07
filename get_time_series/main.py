@@ -87,7 +87,6 @@ def get_data(user, psw, base_url, name, node, objects, attribute, start_time, st
     file.close()
 
 
-# Press the green button in the gutter to run the script.
 if __name__ == '__main__':
     cloudio_base_url = ""
     cloudio_user = ""
