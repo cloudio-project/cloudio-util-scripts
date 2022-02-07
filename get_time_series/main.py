@@ -88,9 +88,9 @@ def get_data(user, psw, base_url, name, node, objects, attribute, start_time, st
 
 
 if __name__ == '__main__':
-    cloudio_base_url = ""
-    cloudio_user = ""
-    cloudio_password = ""
+    cloudio_base_url = "http://example.com"
+    cloudio_user = "USERNAME"
+    cloudio_password = "PASSWORD"
 
     friendlyname = "myEndpoint"
     node = "nodeName"
