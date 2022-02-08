@@ -11,7 +11,7 @@ def get_uuid(user, psw, base_url, name):
     return endpoint[0]['uuid']
 
 
-def get_data(user, psw, base_url, name, node, objects, attribute, start_time, stop_time, resample):
+def get_time_series(user, psw, base_url, name, node, objects, attribute, start_time, stop_time, resample):
     date_format = "%Y-%m-%dT%H:%M:%S.%fZ"
     date_format_2 = "%Y-%m-%dT%H:%M:%SZ"
 
@@ -101,5 +101,5 @@ if __name__ == '__main__':
     stop_time = "2022-01-15T00:00:00Z"  # format: YYYY-MM-DDThh:mm:ssZ
     resample_interval = None  # example: 5s, 15m, 2h, 5d | if set to None, plain data
 
-    get_data(cloudio_user, cloudio_password, cloudio_base_url, friendlyname,
+    get_time_series(cloudio_user, cloudio_password, cloudio_base_url, friendlyname,
             node, objects, attribute, start_time, stop_time, resample_interval)
